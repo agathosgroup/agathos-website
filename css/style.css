@@ -211,18 +211,6 @@ body {
     padding: 0 2rem;
 }
 
-.hero__overline {
-    font-size: 0.68rem;
-    font-weight: 500;
-    letter-spacing: 0.26em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 1.5rem;
-    display: block;
-    opacity: 0;
-    animation: heroFadeUp 1s var(--ease) 0.2s forwards;
-}
-
 .hero__rule {
     width: 50px;
     height: 1px;
@@ -376,22 +364,42 @@ body {
     top: 7rem;
 }
 
+.about__quote--display {
+    font-family: var(--font-display);
+    font-size: clamp(1.4rem, 2.8vw, 2rem);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.4;
+    color: var(--white);
+    padding-left: 1.5rem;
+    border-left: 2px solid var(--accent);
+}
+
 .about__body p {
     color: var(--text-dim);
     font-size: 0.975rem;
     margin-bottom: 1.5rem;
 }
 
-.about__quote {
-    margin-top: 2.5rem;
-    padding: 1.75rem 0 0;
+/* ================================================================
+   MISSION
+   ================================================================ */
+.mission {
+    margin-top: clamp(3rem, 6vw, 5rem);
+    padding-top: clamp(3rem, 6vw, 5rem);
     border-top: 1px solid var(--border);
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 1.6;
+    scroll-margin-top: clamp(2rem, 4vw, 3rem);
+}
+
+.mission__body {
+    max-width: 720px;
+}
+
+.mission__body p {
     color: var(--text-dim);
+    font-size: 0.975rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.85;
 }
 
 /* ================================================================
@@ -697,10 +705,54 @@ body {
 
 a.contact__value:hover { color: var(--white); }
 
+.contact__linkedin {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
 .contact__divider {
     height: 1px;
     background: var(--border);
 }
+
+/* ================================================================
+   PRIVACY
+   ================================================================ */
+.section--privacy {
+    background: var(--bg-alt);
+    padding: clamp(3rem, 6vw, 4rem) 0;
+}
+
+.privacy__inner {
+    max-width: 680px;
+}
+
+.privacy__title {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--white);
+    margin-bottom: 1.25rem;
+}
+
+.privacy__inner p {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.85;
+    margin-bottom: 1rem;
+}
+
+.privacy__inner p:last-child { margin-bottom: 0; }
+
+.privacy__inner a {
+    color: var(--text-dim);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: color 0.2s;
+}
+
+.privacy__inner a:hover { color: var(--white); }
 
 /* ================================================================
    FOOTER
@@ -724,14 +776,10 @@ a.contact__value:hover { color: var(--white); }
     opacity: 0.6;
 }
 
-.footer__tagline {
-    font-size: 0.8rem;
+.footer__kvk {
+    font-size: 0.68rem;
     color: var(--text-muted);
-}
-
-.footer__tagline em {
-    font-style: normal;
-    color: var(--text-dim);
+    letter-spacing: 0.06em;
 }
 
 .footer__copy {
