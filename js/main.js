@@ -16,6 +16,7 @@ navToggle.addEventListener('click', () => {
         spans[1].style.opacity   = '0';
         spans[2].style.transform = 'translateY(-6px) rotate(-45deg)';
         document.body.style.overflow = 'hidden';
+        nav.classList.add('menu-open');
     } else {
         closeMenu();
     }
@@ -23,6 +24,7 @@ navToggle.addEventListener('click', () => {
 
 function closeMenu() {
     navLinks.classList.remove('open');
+    nav.classList.remove('menu-open');
     spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
     document.body.style.overflow = '';
 }
