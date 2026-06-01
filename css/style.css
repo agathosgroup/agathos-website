@@ -774,6 +774,11 @@ a.contact__value:hover { color: var(--white); }
 
 .legal__block p:last-child { margin-bottom: 0; }
 
+.legal__block strong {
+    color: var(--text-dim);
+    font-weight: 500;
+}
+
 .legal__block a {
     color: var(--text-dim);
     text-decoration: underline;
