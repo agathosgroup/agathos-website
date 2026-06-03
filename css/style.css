@@ -406,6 +406,18 @@ body {
     border-left: 2px solid var(--accent);
 }
 
+.about__quote--standout {
+    font-family: var(--font-display);
+    font-size: clamp(1.1rem, 2vw, 1.5rem);
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.5;
+    color: var(--white);
+    padding: 1.25rem 1.5rem;
+    border-left: 2px solid var(--accent);
+    margin: 2rem 0;
+}
+
 .about__body p {
     color: var(--text-dim);
     font-size: 0.975rem;
