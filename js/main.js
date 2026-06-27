@@ -7,8 +7,9 @@ window.addEventListener('scroll', () => {
 // Mobile menu toggle
 const navToggle = document.getElementById('navToggle');
 const navLinks  = document.getElementById('navLinks');
+const spans     = navToggle.querySelectorAll('span');
 
-if (navToggle) navToggle.addEventListener('click', () => {
+navToggle.addEventListener('click', () => {
     const open = navLinks.classList.toggle('open');
     if (open) {
         spans[0].style.transform = 'translateY(6px) rotate(45deg)';
