@@ -170,7 +170,7 @@ body {
 .nav__links a.active::after { width: 100%; }
 
 .nav__toggle {
-    display: none;
+    display: none !important;
     flex-direction: column;
     justify-content: center;
     gap: 5px;
