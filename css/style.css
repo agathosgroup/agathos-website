@@ -912,7 +912,7 @@ a.contact__value:hover { color: var(--white); }
     }
 
     .nav__toggle {
-        display: flex;
+        display: none;
     }
 
     .services__grid { grid-template-columns: 1fr; }
