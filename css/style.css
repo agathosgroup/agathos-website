@@ -830,7 +830,7 @@ a.contact__value:hover { color: var(--white); }
 
 .footer__copy {
     font-size: 0.68rem;
-    color: var(--text-muted);
+    color: var(--text);
     letter-spacing: 0.04em;
 }
 
